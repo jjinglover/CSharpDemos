@@ -4,8 +4,8 @@ set protocdir=%~dp0
 cd ../XmlToProto
 set curdir=%cd%
 set pubprotodir=%curdir%
-set inputdir=%curdir%/protos
-set outputdir=%inputdir%
+set inputdir=%protocdir%/protos
+set outputdir=%curdir%/protos
 
 set /p result=create all proto files ?(Y/N):
 if %result% neq Y (
